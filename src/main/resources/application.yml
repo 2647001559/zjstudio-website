@@ -1,1 +1,23 @@
+######\u6DFB\u52A0web\u670D\u52A1\u5668\u914D\u7F6E
+server:
+  port: 8081
+  tomcat:
+    uri-encoding: UTF-8
+  #\u9ED8\u8BA4\u8BBF\u95EE\u8DEF\u5F84
+  servlet:
+    context-path: /
 
+######\u6DFB\u52A0spring\u5FFD\u7565\u914D\u7F6E
+spring:
+  application:
+    name: web-service
+  http:
+    encoding:
+      charset: UTF-8
+  main:
+    allow-bean-definition-overriding: true
+  mvc:
+    date-format: yyyy/MM/dd
+    static-path-pattern: /templates/**
+    resources:
+        static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,classpath:/templates/
